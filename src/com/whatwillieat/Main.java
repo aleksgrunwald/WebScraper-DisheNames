@@ -22,20 +22,30 @@ public class Main {
 //            String title = webpage.title();
 //            System.out.println("  Title:: " + title);
             Elements liElements = webpage.select("h3 ~ ul").select("li");
+            List<String> finalDishNames = null;
             liElements.forEach((li) -> {
-//                            String dishName;
+                        List<String> dishNamesFromLine = null;
                                 if (!li.text().contains("<a")) {
-                                    if(li.text().contains("of")) {
-                                        devideByOr(li.text());
+                                    if(li.text().contains("or")) {
+                                        List<String> dishesFromOneLine = devideByWord("or", li.text());
+                                        for (String singleDish : dishesFromOneLine) {
+                                            dishNamesFromLine.add(singleDish);
+                                        }
                                     }
-                                    System.out.println(li.text());
+                                    dishNamesFromLine.add(li.text());
                                 } else {
-                                    System.out.println(li.select("a").text());
+                                    dishNamesFromLine.add(li.select("a").text());
+                                }
+
+                                for (String dishNameFromLine : dishNamesFromLine) {
+                                    finalDishNames.add(dishNameFromLine);
                                 }
                             }
                     );
-            System.out.println("  ----------------------------------------   ");
-//            System.out.println("  <ul>s:: " + liElements);
+            for (String finalDishName : finalDishNames) {
+                System.out.println("finalDishName:   " + finalDishName);
+            }
+            System.out.println("Finished adding  ----------------------------------------   ");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -43,10 +53,13 @@ public class Main {
         System.out.println("Done with the href -----");
         }
 
-    public static void devideByOr(String paragraph){
-        String[] dishes = paragraph.split("or");
-        for (String s : dishes) {
-            System.out.println("-----  " + s);
+
+    private static List<String> devideByWord(String word, String paragraph){
+        List<String> singleDishesFromOneLine = null;
+        String[] dishes = paragraph.split(word);
+        for (String dish : dishes) {
+            singleDishesFromOneLine.add(dish);
         }
+        return singleDishesFromOneLine;
     }
 }
