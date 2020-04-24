@@ -6,6 +6,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -22,12 +23,12 @@ public class Main {
 //            String title = webpage.title();
 //            System.out.println("  Title:: " + title);
             Elements liElements = webpage.select("h3 ~ ul").select("li");
-            List<String> finalDishNames = null;
+            List<String> finalDishNames = new ArrayList<String>();;
             liElements.forEach((li) -> {
-                        List<String> dishNamesFromLine = null;
+                        List<String> dishNamesFromLine = new ArrayList<String>();;
                                 if (!li.text().contains("<a")) {
                                     if(li.text().contains("or")) {
-                                        List<String> dishesFromOneLine = devideByWord("or", li.text());
+                                        String[] dishesFromOneLine = devideByWord(" or ", li.text());
                                         for (String singleDish : dishesFromOneLine) {
                                             dishNamesFromLine.add(singleDish);
                                         }
@@ -37,9 +38,7 @@ public class Main {
                                     dishNamesFromLine.add(li.select("a").text());
                                 }
 
-                                for (String dishNameFromLine : dishNamesFromLine) {
-                                    finalDishNames.add(dishNameFromLine);
-                                }
+                                finalDishNames.addAll(dishNamesFromLine);
                             }
                     );
             for (String finalDishName : finalDishNames) {
@@ -51,15 +50,14 @@ public class Main {
         }
 
         System.out.println("Done with the href -----");
-        }
-
-
-    private static List<String> devideByWord(String word, String paragraph){
-        List<String> singleDishesFromOneLine = null;
-        String[] dishes = paragraph.split(word);
-        for (String dish : dishes) {
-            singleDishesFromOneLine.add(dish);
-        }
-        return singleDishesFromOneLine;
     }
+
+
+
+
+    private static String[] devideByWord(String word, String paragraph){
+        String[] dishes = paragraph.split(word);
+        return dishes;
+    }
+
 }
