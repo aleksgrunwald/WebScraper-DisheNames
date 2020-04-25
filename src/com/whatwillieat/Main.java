@@ -24,17 +24,17 @@ public class Main {
             webpage = Jsoup.connect("https://funcheaporfree.com/foodie-tuesday-what-to-make-for/").get();
 //            String title = webpage.title();
 //            System.out.println("  Title:: " + title);
-            Elements liElements = webpage.select("h3 ~ ul").select("li");
             List<String> finalDishNames = new ArrayList<String>();
+            Elements liElements = webpage.select("h3 ~ ul").select("li");
             liElements.forEach((li) -> {
                             List<String> dishNamesFromLine = new ArrayList<String>();
-                                    if(li.text().contains("or")) {
+                            String liTextTrimmedBracketsText = li.text().replaceAll("\\(.*\\)", "");
+                                    if(liTextTrimmedBracketsText.contains("or")) {
                                         List<String> dishesFromOneLine = devideByWord(" or ", li.text());
                                         dishNamesFromLine.addAll(dishesFromOneLine);
                                     } else {
-                                        dishNamesFromLine.add(li.text());
+                                        dishNamesFromLine.add(liTextTrimmedBracketsText);
                                     }
-
                                 finalDishNames.addAll(dishNamesFromLine);
                             }
                     );
