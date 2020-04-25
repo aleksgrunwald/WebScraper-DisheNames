@@ -20,11 +20,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/whatwillieat/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+            <state relative-caret-position="88">
+              <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#428#436#0" expanded="true" />
+                <element signature="e#457#465#0" expanded="true" />
+                <element signature="e#821#829#0" expanded="true" />
+                <element signature="e#925#933#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,6 +37,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>chicken sandwi</find>
+      <find>collection</find>
+      <find>Collection</find>
+      <find>System.out.println</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -48,9 +53,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="607" />
-    <option name="y" value="7" />
-    <option name="width" value="1273" />
+    <option name="x" value="675" />
+    <option name="y" value="11" />
+    <option name="width" value="1268" />
     <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -126,11 +131,25 @@
       <option name="project" value="LOCAL" />
       <updated>1585513402760</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Trying to work this out">
+      <created>1587744199474</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587744199474</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Getting single dishes names (dividing dishes from one line by or)">
+      <created>1587746878460</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587746878460</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="486" y="6" width="1018" height="818" extended-state="0" />
+    <frame x="540" y="9" width="1014" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.46649486" />
@@ -142,14 +161,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.7827988" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6924198" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.29446065" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32994187" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32944608" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.483965" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -161,10 +180,38 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Getting li string content" />
     <MESSAGE value="Method which splits paragraph by or" />
-    <option name="LAST_COMMIT_MESSAGE" value="Method which splits paragraph by or" />
+    <MESSAGE value="Trying to work this out" />
+    <MESSAGE value="Getting single dishes names (dividing dishes from one line by or)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting single dishes names (dividing dishes from one line by or)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/whatWillIEat.iml">
@@ -183,13 +230,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="1539" column="19" selection-start-line="1539" selection-start-column="19" selection-end-line="1539" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/whatwillieat/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        <state relative-caret-position="88">
+          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#428#436#0" expanded="true" />
+            <element signature="e#457#465#0" expanded="true" />
+            <element signature="e#821#829#0" expanded="true" />
+            <element signature="e#925#933#0" expanded="true" />
           </folding>
         </state>
       </provider>

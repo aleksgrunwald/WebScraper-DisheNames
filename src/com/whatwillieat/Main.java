@@ -23,17 +23,18 @@ public class Main {
 //            String title = webpage.title();
 //            System.out.println("  Title:: " + title);
             Elements liElements = webpage.select("h3 ~ ul").select("li");
-            List<String> finalDishNames = new ArrayList<String>();;
+            List<String> finalDishNames = new ArrayList<String>();
             liElements.forEach((li) -> {
-                        List<String> dishNamesFromLine = new ArrayList<String>();;
+                        List<String> dishNamesFromLine = new ArrayList<String>();
                                 if (!li.text().contains("<a")) {
                                     if(li.text().contains("or")) {
                                         String[] dishesFromOneLine = devideByWord(" or ", li.text());
                                         for (String singleDish : dishesFromOneLine) {
                                             dishNamesFromLine.add(singleDish);
                                         }
+                                    } else {
+                                        dishNamesFromLine.add(li.text());
                                     }
-                                    dishNamesFromLine.add(li.text());
                                 } else {
                                     dishNamesFromLine.add(li.select("a").text());
                                 }
@@ -44,7 +45,6 @@ public class Main {
             for (String finalDishName : finalDishNames) {
                 System.out.println("finalDishName:   " + finalDishName);
             }
-            System.out.println("Finished adding  ----------------------------------------   ");
         } catch (IOException e) {
             e.printStackTrace();
         }
