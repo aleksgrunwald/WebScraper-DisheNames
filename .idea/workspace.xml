@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18be7106-6f79-4de3-8775-ccaf1f4daed3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/whatWillIEat/com/whatwillieat/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/whatWillIEat/com/whatwillieat/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/whatwillieat/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/whatwillieat/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,12 +21,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/whatwillieat/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+            <state relative-caret-position="187">
+              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#457#465#0" expanded="true" />
-                <element signature="e#821#829#0" expanded="true" />
+                <element signature="e#804#812#0" expanded="true" />
                 <element signature="e#925#933#0" expanded="true" />
               </folding>
             </state>
@@ -45,6 +46,10 @@
       <find>pulled</find>
       <find>pulled BB</find>
       <find>SECOND</find>
+      <find>(various recipes, ham &amp; corn chowder is good</find>
+      <find>mash</find>
+      <find>(plain cheese, or steak, ch</find>
+      <find>startIndex</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,8 +169,31 @@
       <option name="project" value="LOCAL" />
       <updated>1587775874118</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="For loop replaced with addAll">
+      <created>1587776217020</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587776217020</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Trim brackets but not all brackets.. mistery....">
+      <created>1587777069549</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587777069549</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="442" y="9" width="1112" height="818" extended-state="0" />
@@ -180,11 +208,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3760933" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46209913" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32944608" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.29446065" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32944608" />
@@ -232,7 +260,9 @@
     <MESSAGE value="Getting single dishes names (dividing dishes from one line by or)" />
     <MESSAGE value="Getting single dishes names - no duplicates" />
     <MESSAGE value="Unnecessary if deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unnecessary if deleted" />
+    <MESSAGE value="For loop replaced with addAll" />
+    <MESSAGE value="Trim brackets but not all brackets.. mistery...." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trim brackets but not all brackets.. mistery...." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/whatWillIEat.iml">
@@ -260,12 +290,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/whatwillieat/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="187">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#457#465#0" expanded="true" />
-            <element signature="e#821#829#0" expanded="true" />
+            <element signature="e#804#812#0" expanded="true" />
             <element signature="e#925#933#0" expanded="true" />
           </folding>
         </state>
