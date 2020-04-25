@@ -25,8 +25,7 @@ public class Main {
             Elements liElements = webpage.select("h3 ~ ul").select("li");
             List<String> finalDishNames = new ArrayList<String>();
             liElements.forEach((li) -> {
-                        List<String> dishNamesFromLine = new ArrayList<String>();
-                                if (!li.text().contains("<a")) {
+                            List<String> dishNamesFromLine = new ArrayList<String>();
                                     if(li.text().contains("or")) {
                                         String[] dishesFromOneLine = devideByWord(" or ", li.text());
                                         for (String singleDish : dishesFromOneLine) {
@@ -35,9 +34,6 @@ public class Main {
                                     } else {
                                         dishNamesFromLine.add(li.text());
                                     }
-                                } else {
-                                    dishNamesFromLine.add(li.select("a").text());
-                                }
 
                                 finalDishNames.addAll(dishNamesFromLine);
                             }
