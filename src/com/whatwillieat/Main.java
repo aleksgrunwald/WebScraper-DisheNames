@@ -5,7 +5,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -27,10 +29,8 @@ public class Main {
             liElements.forEach((li) -> {
                             List<String> dishNamesFromLine = new ArrayList<String>();
                                     if(li.text().contains("or")) {
-                                        String[] dishesFromOneLine = devideByWord(" or ", li.text());
-                                        for (String singleDish : dishesFromOneLine) {
-                                            dishNamesFromLine.add(singleDish);
-                                        }
+                                        List<String> dishesFromOneLine = devideByWord(" or ", li.text());
+                                        dishNamesFromLine.addAll(dishesFromOneLine);
                                     } else {
                                         dishNamesFromLine.add(li.text());
                                     }
@@ -51,9 +51,9 @@ public class Main {
 
 
 
-    private static String[] devideByWord(String word, String paragraph){
+    private static List<String> devideByWord(String word, String paragraph){
         String[] dishes = paragraph.split(word);
-        return dishes;
+        return Arrays.asList(dishes);
     }
 
 }

@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/whatwillieat/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+            <state relative-caret-position="238">
+              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#457#465#0" expanded="true" />
@@ -40,6 +40,11 @@
       <find>collection</find>
       <find>Collection</find>
       <find>System.out.println</find>
+      <find>ribs</find>
+      <find>ezv sens</find>
+      <find>pulled</find>
+      <find>pulled BB</find>
+      <find>SECOND</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -53,9 +58,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="675" />
+    <option name="x" value="552" />
     <option name="y" value="11" />
-    <option name="width" value="1268" />
+    <option name="width" value="1390" />
     <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -145,11 +150,25 @@
       <option name="project" value="LOCAL" />
       <updated>1587746878460</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Getting single dishes names - no duplicates">
+      <created>1587773898283</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587773898283</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Unnecessary if deleted">
+      <created>1587775874118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587775874118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="540" y="9" width="1014" height="818" extended-state="0" />
+    <frame x="442" y="9" width="1112" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.46649486" />
@@ -161,7 +180,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6924198" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3760933" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -211,7 +230,9 @@
     <MESSAGE value="Method which splits paragraph by or" />
     <MESSAGE value="Trying to work this out" />
     <MESSAGE value="Getting single dishes names (dividing dishes from one line by or)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting single dishes names (dividing dishes from one line by or)" />
+    <MESSAGE value="Getting single dishes names - no duplicates" />
+    <MESSAGE value="Unnecessary if deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unnecessary if deleted" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/whatWillIEat.iml">
@@ -239,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/whatwillieat/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+        <state relative-caret-position="238">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#457#465#0" expanded="true" />
