@@ -42,10 +42,7 @@ public class Main {
                             }
                     );
             System.out.println(finalDishNames);
-            createJSON(finalDishNames);
-//            for (String finalDishName : finalDishNames) {
-//                System.out.println("finalDishName:   " + finalDishName);
-//            }
+            createJSON(finalDishNames, "C:\\Projekty\\whatwillieat\\", "dishes1");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,20 +51,19 @@ public class Main {
     }
 
 
-    private static void createJSON(List<String> data) {
-        JSONObject obj = new JSONObject();
+    private static void createJSON(List<String> dishesData, String JSONFilePlace, String JSONFileName) {
+        JSONObject object = new JSONObject();
         JSONArray dishes = new JSONArray();
-        for (String element : data) {
-            dishes.add(element);
+        for (String dishName : dishesData) {
+            dishes.add(dishName);
         }
-        obj.put("dishes", dishes);
+        object.put("dishes", dishes);
 
-        try (FileWriter file = new FileWriter("C:\\Projekty\\whatwillieat\\testJSON.json")) {
-            file.write(obj.toJSONString());
+        try (FileWriter file = new FileWriter(JSONFilePlace + JSONFileName + ".json")) {
+            file.write(object.toJSONString());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(obj);
     }
 
 

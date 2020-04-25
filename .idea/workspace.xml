@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18be7106-6f79-4de3-8775-ccaf1f4daed3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whatWillIEat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/whatWillIEat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/whatwillieat/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/whatwillieat/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/whatwillieat/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+            <state relative-caret-position="342">
+              <caret line="44" column="79" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#457#465#0" expanded="true" />
@@ -49,6 +48,7 @@
       <find>mash</find>
       <find>(plain cheese, or steak, ch</find>
       <find>startIndex</find>
+      <find>for</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -62,9 +62,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="725" />
+    <option name="x" value="472" />
     <option name="y" value="11" />
-    <option name="width" value="1218" />
+    <option name="width" value="1472" />
     <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -234,7 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587778234720</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Jsonsimple jar added to the project">
+      <created>1587835811602</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587835811602</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Creating JSON with data">
+      <created>1587837006843</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587837006843</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -247,9 +261,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="442" y="9" width="1112" height="818" extended-state="0" />
+    <frame x="378" y="9" width="1177" height="818" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28802282" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3986842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -258,7 +273,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6895044" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33236152" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,7 +328,9 @@
     <MESSAGE value="For loop replaced with addAll" />
     <MESSAGE value="Trim brackets but not all brackets.. mistery...." />
     <MESSAGE value="Trim text in brackets from dish names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trim text in brackets from dish names" />
+    <MESSAGE value="Jsonsimple jar added to the project" />
+    <MESSAGE value="Creating JSON with data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating JSON with data" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/whatWillIEat.iml">
@@ -344,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/whatwillieat/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+        <state relative-caret-position="342">
+          <caret line="44" column="79" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#457#465#0" expanded="true" />
