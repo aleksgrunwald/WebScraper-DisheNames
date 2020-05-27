@@ -8,10 +8,8 @@ import org.jsoup.select.Elements;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 
@@ -42,7 +40,7 @@ public class Main {
                             }
                     );
             System.out.println(finalDishNames);
-            createJSON(finalDishNames, "C:\\Projekty\\whatwillieat\\", "dishes1");
+            createJSON(finalDishNames, "C:\\Projekty\\whatwillieat\\", "dishes2");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,9 +50,32 @@ public class Main {
 
 
     private static void createJSON(List<String> dishesData, String JSONFilePlace, String JSONFileName) {
+        String namePartOfObj = "name: ";
+        String vegPartOfObj = "vegetarian: ";
+        String sidePartOfObj = "side: ";
+        String mealPartOfObj = "meal: ";
+
+
         JSONObject object = new JSONObject();
-        JSONArray dishes = new JSONArray();
+
+//        JSONArray dishes = new JSONArray();
         for (String dishName : dishesData) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("{");
+            sb.append(vegPartOfObj);
+            sb.append("no");
+            sb.append(", ");
+            sb.append(namePartOfObj);
+            sb.append(dishName);
+            sb.append(", ");
+            sb.append(sidePartOfObj);
+            sb.append("def");
+            sb.append(", ");
+            sb.append(mealPartOfObj);
+            sb.append("dinner");
+            sb.append("}");
+            sb.toString();
+
             dishes.add(dishName);
         }
         object.put("dishes", dishes);
